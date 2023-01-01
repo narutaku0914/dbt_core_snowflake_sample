@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  dbt:
+    build: .
+    ports:
+      - 8100:8100
+    volumes:
+      - ./work:/usr/app/dbt
+    container_name: dbt_core_sf_sample
