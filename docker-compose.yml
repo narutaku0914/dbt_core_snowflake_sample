@@ -3,7 +3,7 @@ services:
   dbt:
     build: .
     ports:
-      - 8100:8100
+      - 8100:8080
     volumes:
       - ./work:/usr/app/dbt
     container_name: dbt_core_sf_sample
